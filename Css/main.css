@@ -1,0 +1,204 @@
+html {
+  overflow-x: hidden;
+}
+
+@-webkit-keyframes showItem {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes showItem {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes itemDown {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes itemDown {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body #header {
+  width: 100%;
+}
+
+body #header .hamburger-line {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  height: 2px;
+  width: 30px;
+  opacity: 1;
+  background-color: #134e4a;
+}
+
+body #header .hamburger-active > span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+body #header .hamburger-active > span:nth-child(2) {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+body #header .hamburger-active > span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+body #hero {
+  background-image: url("../Img/bgAtas.png") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body #hero #hero_img {
+  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
+}
+
+body #about {
+  background-image: url("../Img/bgTengah.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body #about #about_img {
+  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
+}
+
+body #services {
+  background-image: url("../Img/bgTengah.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body #komunitas {
+  background-image: url("../Img/bgTengah.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body #sertifikat {
+  background-image: url("../Img/bgTengah.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body #portfolio {
+  background-image: url("../Img/bgTengah.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body #portfolio .kategori1 .checkbox:checked ~ .name {
+  color: #14b8a6;
+}
+
+body #portfolio .kategori2 .checkbox:checked ~ .name {
+  color: #14b8a6;
+}
+
+body #portfolio .name:hover {
+  color: #83cec5;
+}
+
+body #portfolio .portfolio-item-hide {
+  display: none;
+  -webkit-animation: itemDown 0.5s ease;
+          animation: itemDown 0.5s ease;
+}
+
+body #portfolio .portfolio-item-show {
+  display: block;
+  -webkit-animation: showItem 0.5s ease;
+          animation: showItem 0.5s ease;
+}
+
+body #contact {
+  background-image: url("../Img/bgBawah.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body #contact_img {
+  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
+}
+
+.navbar-fixed {
+  position: fixed;
+  z-index: 9999;
+  background-color: white;
+  opacity: 0.7;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  -webkit-box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=main.css.map */
