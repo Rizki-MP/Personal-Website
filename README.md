@@ -1,7 +1,7 @@
 # My Personal website with Tailwind
-https://rizki-mp.github.io/Personal-Web-Tailwind
+https://rizki-mp.github.io/Personal-Website
 
-website ini adalah web personal saya dengan menggunakan teknik Tailwind
+website ini adalah web personal saya
 
 teknologi yg di gunakan
 
